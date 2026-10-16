@@ -1,24 +1,22 @@
+# Dependencias
+node_modules/
+
+# Compilación y caché de TypeScript
+dist/
+*.tsbuildinfo
+
 # Logs
-logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Variables de entorno
+.env
+.env.*
+!.env.example
 
-# Editor directories and files
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
