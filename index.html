@@ -10,8 +10,53 @@
 
 <body>
   <h1>Clientes y Pedidos</h1>
-  <div id="clientes"></div>
-  <div id="pedidos"></div>
+
+  <!-- CLIENTES -->
+  <h2>Clientes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Ciudad</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-clientes"></tbody>
+  </table>
+
+  <form id="form-cliente">
+    <h3 id="titulo-form-cliente">Nuevo cliente</h3>
+    <input id="cliente-nombre" placeholder="Nombre" required />
+    <input id="cliente-ciudad" placeholder="Ciudad" required />
+    <button type="submit">Guardar</button>
+    <button type="button" id="cancelar-cliente">Cancelar</button>
+  </form>
+
+  <!-- PEDIDOS (del cliente elegido con "Ver pedidos") -->
+  <div id="seccion-pedidos" hidden>
+    <h2 id="titulo-pedidos"></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Producto</th>
+          <th>Importe</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-pedidos"></tbody>
+    </table>
+
+    <form id="form-pedido">
+      <h3 id="titulo-form-pedido">Nuevo pedido</h3>
+      <input id="pedido-producto" placeholder="Producto" required />
+      <input id="pedido-importe" type="number" step="0.01" min="0" placeholder="Importe" required />
+      <button type="submit">Guardar</button>
+      <button type="button" id="cancelar-pedido">Cancelar</button>
+    </form>
+  </div>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
 

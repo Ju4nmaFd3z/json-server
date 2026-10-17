@@ -12,3 +12,39 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #8884;
+  padding: .4rem .6rem;
+  text-align: left;
+}
+
+tr.seleccionado {
+  background: #646cff22;
+}
+
+button {
+  margin-right: .4rem;
+  cursor: pointer;
+}
+
+form label {
+  margin-right: 1rem;
+}
+
+.error {
+  color: #d33;
+}
